@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMeal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css">
+
+<body class="body">
+    
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#">
+                        <svg class="header__logo">
+                            <use href="./img/sprite.svg#logo" />
+                        </svg>
+                    </a>
+                    <div class="header__titles">
+                        <h1 class="header__titles-title">Только самые <br><span class="orangeTxt">сочные бургеры!</span></h1>
+                        <p class="header__titles-subtitle">Бесплатная доставка от <span>599₽</span></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="section assortment lock-padding">
+                <div class="container__section">
+                    <div class="assortment__inner">
+                        <nav class="assortment__nav">
+                            <ul class="assortment__list">
+                                <li data-tab-name="tab-1" class="assortment__list-item item1 is-active">Бургеры</li>
+                                <li data-tab-name="tab-2" class="assortment__list-item item2">Закуски</li>
+                                <li data-tab-name="tab-3" class="assortment__list-item item3">Хот-доги</li>
+                                <li data-tab-name="tab-4" class="assortment__list-item item4">Комбо</li>
+                                <li data-tab-name="tab-5" class="assortment__list-item item5">Шаурма</li>
+                                <li data-tab-name="tab-6" class="assortment__list-item item6">Пицца</li>
+                                <li data-tab-name="tab-7" class="assortment__list-item item7">Вок</li>
+                                <li data-tab-name="tab-8" class="assortment__list-item item8">Десерты</li>
+                                <li data-tab-name="tab-9" class="assortment__list-item item9">Соусы</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <section class="section cards__body">
+                <div class="container__section">
+                    <div class="cards__section-inner">
+                        <div class="shopping__cart close">
+                            <div class="cart__top">
+                                <h2 class="cart__top-title">Корзина</h2>
+                                <p class="cart__top-subtitle">0</p>
+                            </div>
+                            <div class="cards__body-cart">
+                                <div class="cart__middle">
+                                </div>
+                                <div class="cart__bottom none">
+                                    <div class="cart__price">
+                                        <p class="cart__bottom-result">Итого</p>
+                                        <p class="cart__bottom-price"><span class="total__curency">0</span><span>₽</span></p>
+                                    </div>
+                                    <a href="#deliveryPopup" class="orderBtn popup-link">Оформить заказ</a>
+                                    <div class="delivery none">
+                                        <p class="freeDelivery">Бесплатная доставка</p>
+                                        <p class="close">Свернуть</p>
+                                    </div>
+                                </div>
+                                <div class="emptyCart" data-cart-empty>
+                                    <p>Тут пока пусто :(</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" tab cards__section tab-1 is-active">
+                            <h2 class="cards__title">Бургеры</h2>
+                            <div class="cards__wrapper">
+                                <a href="#productBurger1" class="card popup-link">
+                                    <img src="./img/cards/burgers/meetBomb.webp" alt="card" class="card-pic">
+                                    <p class="card__price">689₽</p>
+                                    <h3 class="card__title">Мясная бомба</h3>
+                                    <p class="card__weight">520г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productBurger2" class="card popup-link">
+                                    <img src="./img/cards/burgers/superCheese.webp" alt="card" class="card-pic">
+                                    <p class="card__price">550₽</p>
+                                    <h3 class="card__title">Супер сырный</h3>
+                                    <p class="card__weight">512г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productBurger3" class="card popup-link">
+                                    <img src="./img/cards/burgers/satisfying.webp" alt="card" class="card-pic">
+                                    <p class="card__price">639₽</p>
+                                    <h3 class="card__title">Сытный</h3>
+                                    <p class="card__weight">580г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productBurger4" class="card popup-link">
+                                    <img src="./img/cards/burgers/hardHit.webp" alt="card" class="card-pic">
+                                    <p class="card__price">480₽</p>
+                                    <h3 class="card__title">Тяжелый удар</h3>
+                                    <p class="card__weight">470г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productBurger5" class="card popup-link">
+                                    <img src="./img/cards/burgers/immortalClassic.webp" alt="card" class="card-pic">
+                                    <p class="card__price">450₽</p>
+                                    <h3 class="card__title">Вечная классика</h3>
+                                    <p class="card__weight">450г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productBurger6" class="card popup-link">
+                                    <img src="./img/cards/burgers/italian.webp" alt="card" class="card-pic">
+                                    <p class="card__price">560₽</p>
+                                    <h3 class="card__title">Итальянский</h3>
+                                    <p class="card__weight">510г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" tab cards__section tab-2">
+                            <h2 class="cards__title">Закуски</h2>
+                            <div class="cards__wrapper">
+                                <a href="#productSnack1" class="card popup-link">
+                                    <img src="./img/cards/snacks/nachos.webp" alt="card" class="card-pic">
+                                    <p class="card__price">250₽</p>
+                                    <h3 class="card__title">Начос</h3>
+                                    <p class="card__weight">220г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productSnack2" class="card popup-link">
+                                    <img src="./img/cards/snacks/frenchFries.webp" alt="card" class="card-pic">
+                                    <p class="card__price">245₽</p>
+                                    <h3 class="card__title">Картошка фри</h3>
+                                    <p class="card__weight">180г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="#productSnack3" class="card popup-link">
+                                    <img src="./img/cards/snacks/onionRings.webp" alt="card" class="card-pic">
+                                    <p class="card__price">230₽</p>
+                                    <h3 class="card__title">Луковые кольца</h3>
+                                    <p class="card__weight">160г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" tab cards__section tab-3">
+                            <h2 class="cards__title">Хот-доги</h2>
+                            <div class="cards__wrapper">
+                                <a href="productHotDog1" class="card popup-link">
+                                    <img src="./img/cards/hotdogs/homemadeHotDog.webp" alt="card" class="card-pic">
+                                    <p class="card__price">290₽</p>
+                                    <h3 class="card__title">Домашний хот-дог</h3>
+                                    <p class="card__weight">250г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="productHotDog2" class="card popup-link">
+                                    <img src="./img/cards/hotdogs/spicyHotDog.webp" alt="card" class="card-pic">
+                                    <p class="card__price">239₽</p>
+                                    <h3 class="card__title">Жгучий хот-дог</h3>
+                                    <p class="card__weight">245г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                                <a href="productHotDog3" class="card popup-link">
+                                    <img src="./img/cards/hotdogs/classicalHotDog.webp" alt="card" class="card-pic">
+                                    <p class="card__price">220₽</p>
+                                    <h3 class="card__title">Классический хот-дог</h3>
+                                    <p class="card__weight">215г</p>
+                                    <button class="grayBtn">Добавить</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab tab-4 tab-5 tab-6 tab-7 tab-8 tab-9 cards__section">
+                            <h2 class="cards__title">Таких товаров ещё нет :(</h2>
+                            <div class="cards__wrapper">
+                                <a href="#undefind" class="card popup-link isntActive">
+                                    <img src="./img/no-image-available-icon-6.webp" alt="card" class="card-pic">
+                                    <p class="card__price">₽₽₽</p>
+                                    <h3 class="card__title">Такого товара нет</h3>
+                                    <p class="card__weight">0г</p>
+                                    <button class="grayBtn isntActive">Добавить</button>
+                                </a>
+                                <a href="#undefind" class="card popup-link isntActive">
+                                    <img src="./img/no-image-available-icon-6.webp" alt="card" class="card-pic">
+                                    <p class="card__price">₽₽₽</p>
+                                    <h3 class="card__title">Такого товара нет</h3>
+                                    <p class="card__weight">0г</p>
+                                    <button class="grayBtn isntActive">Добавить</button>
+                                </a>
+                                <a href="#undefind" class="card popup-link isntActive">
+                                    <img src="./img/no-image-available-icon-6.webp" alt="card" class="card-pic">
+                                    <p class="card__price">₽₽₽</p>
+                                    <h3 class="card__title">Такого товара нет</h3>
+                                    <p class="card__weight">0г</p>
+                                    <button class="grayBtn isntActive">Добавить</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <a href="#" class="footer__logo">
+                            <img src="./img/logo.svg" alt="" class="big">
+                        </a>
+                        <div class="contact">
+                            <h2 class="contact-title">Номер для заказа</h2>
+                            <a class="contact-tel" href="tel:+79308333811">+7(930)833-38-11</a>
+                        </div>
+                        <div class="contact">
+                            <h2 class="contact-title">Мы в соцсетях</h2>
+                            <a href="#">
+                                <svg class="footer-pic">
+                                    <use href="./img/sprite.svg#vk" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="footer-pic">
+                                    <use href="./img/sprite.svg#tg" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__top-wrap">
+                            <div class="contact">
+                                <h2 class="contact-title">Номер для заказа</h2>
+                                <a class="contact-tel" href="tel:+79308333811">+7(930)833-38-11</a>
+                            </div>
+                            <div class="contact">
+                                <h2 class="contact-title">Мы в соцсетях</h2>
+                                <a href="#">
+                                    <svg class="footer-pic">
+                                        <use href="./img/sprite.svg#vk" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="footer-pic">
+                                        <use href="./img/sprite.svg#tg" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>© YouMeal, 2022 <br>Design: Anastasia Ilina</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    
+    <div id="deliveryPopup" class="deliveryPopup popup">
+        <div class="deliveryPopup__body">
+            <div class="deliveryPopup__content popup__content">
+                <a href="#" class="close__popup">
+                    <svg class="close-svg">
+                        <use href="./img/sprite.svg#close" />
+                    </svg>
+                </a>
+                <div class="delivery__left"></div>
+                <div class="delivery__right">
+                    <form action="#" class="deliveryPopup__form">
+                        <div class="form__top">
+                            <h2 class="deliveryPopup__title">Доставка</h2>
+                            <input type="text" placeholder="Ваше имя" class="deliveryPopup__form-input">
+                            <input type="tel" placeholder="Ваш телефон" class="deliveryPopup__form-input">
+                            <div class="radio__btn">
+                                <div class="radio-1">
+                                    <input type="radio" name="receiving" id="pickup" class="deliveryPopup__radio">
+                                    <label for="pickup">Самовывоз</label>
+                                </div>
+                                <div class="radio-1">
+                                    <input type="radio" checked name="receiving" id="delivery" class="deliveryPopup__radio">
+                                    <label for="pickup">Доставка</label>
+                                </div>
+                            </div>
+                            <div class="form__bottom pickup">
+                                <input type="text" placeholder="Улица, дом, квартира" class="deliveryPopup__form-input A">
+                                <input type="text" placeholder="Этаж" class="deliveryPopup__form-input B">
+                                <input type="text" placeholder="Домофон" class="deliveryPopup__form-input C">
+                            </div>
+                        </div>
+                        <button id="orderBtn" class="orangeBtn">Оформить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="burger__popups">
+        <div id="productBurger1" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger1">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Мясная бомба</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/meetBomb.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">520г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">689₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productBurger2" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger2">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Супер сырный</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/supercheese.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">512г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">550₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productBurger3" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger3">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Сытный</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/satisfying.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">580г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">639₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productBurger4" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger4">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Тяжелый удар</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/hardhit.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">470г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">480₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productBurger5" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger5">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Вечная классика</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/immortalclassic.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">450г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">450₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productBurger6" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="burger6">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Итальянский</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/burgers/italian.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">510г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">560₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="snacks__popups">
+        <div id="productSnack1" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="snack1">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Начос</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/snacks/nachos.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">250г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">220₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productSnack2" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="snack2">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Картошка фри</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/snacks/frenchfries.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">180г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">245₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productSnack3" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="snack3">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Луковые кольца</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/snacks/onionrings.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">160г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">230₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotDogs__popups">
+        <div id="productHotDog1" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="hotdog1">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Домашний хот-дог</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/hotdogs/homemadehotdog.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">250г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">290₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productHotDog2" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="hotdog2">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Жгучий хот-дог</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/hotdogs/spicyhotdog.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">245г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">239₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productHotDog3" class="product deliveryPopup popup">
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="hotdog3">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Классический хот-дог</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/cards/hotdogs/classicalhotdog.webp" alt="meetBomb" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Пшеничная булочка</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Котлета из говядины</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Красный лук</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Листья салата</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Соус горчичный</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">215г, ккал 430</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button data-cart class="orangeBtn">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">220₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="undefind" class="product deliveryPopup popup">
+        <!-- <div id="undefind" class="product deliveryPopup popup"> -->
+            <div class="deliveryPopup__body">
+                <div class="deliveryPopup__content product__content popup__content">
+                    <a href="#" class="close__popup">
+                        <svg class="close-svg">
+                            <use href="./img/sprite.svg#close" />
+                        </svg>
+                    </a>
+                    <div class="productWrap" data-id="undefind">
+                        <div class="productWap-top">
+                            <h2 class="productWrap__title">Такого товара нет</h2>
+                            <div class="productWrap__middle">
+                                <img src="./img/no-image-available-icon-6.webp" alt="undefind" class="productWrap__picture">
+                                <div class="productWrap__descr">
+                                    <p class="productWrap__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste cum adipisci suscipit vitae! Eius illum dolor officia sapiente beatae!</p>
+                                    <ul class="productWrap__compositionOfTheProduct-list">
+                                        <li class="productWrap__compositionOfTheProduct-item _title">Состав:</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Lorem, ipsum.</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Lorem, ipsum dolor.</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Lorem, ipsum.</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Lorem, ipsum.</li>
+                                        <li class="productWrap__compositionOfTheProduct-item">Lorem, ipsum.</li>
+                                        <li class="productWrap__compositionOfTheProduct-item _weight">0г, ккал 0</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productWrap__bottom">
+                            <div class="productWrap__bottom-l">
+                                <button disabled data-cart class="orangeBtn isntActive">Добавить</button>
+                                <div class="counter">
+                                    <button class="counterMinus  counterBtn" data-action="minus">-</button>
+                                    <p class="counter__count" data-counter>1</p>
+                                    <button class="counterPlus counterBtn" data-action="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="productWrap__bottom-r">
+                                <p class="productWrap__bottom-price">₽₽₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <script defer src="./js/app.js"></script>     
+</body>
+</html>
